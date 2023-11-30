@@ -1,22 +1,21 @@
 {
     "name": "dev-containers-demo",
 
-	"image": "mcr.microsoft.com/vscode/devcontainers/base:debian-11",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:debian-11",
 
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {
-			"version": "20.9.0"
-		},
-		"ghcr.io/devcontainers-contrib/features/aws-eb-cli:1": {}
-	},
-
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"hoovercj.vscode-power-mode"
-			]
-		}
-	},
-
-	"postCreateCommand": "npm install && npm run prepare"
+    "features": {
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "20.9.0"
+        },
+        "ghcr.io/devcontainers-contrib/features/aws-eb-cli:1": {}
+    },
+    
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "hoovercj.vscode-power-mode"
+            ]
+        }
+    },
+    "postCreateCommand": "npm install && npm run prepare"
 }
